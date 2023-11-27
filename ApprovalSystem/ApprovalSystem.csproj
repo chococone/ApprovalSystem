@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>3b334164-013b-420c-89a1-23208a997807</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.0" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="2.15.5" />
+    <PackageReference Include="Microsoft.Identity.Web.MicrosoftGraph" Version="2.15.5" />
+    <PackageReference Include="Microsoft.Identity.Web.DownstreamApi" Version="2.15.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj" />
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj" />
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
+    <ProjectReference Include="..\ViewModelLayer\ViewModelLayer.csproj" />
+  </ItemGroup>
+
+</Project>
